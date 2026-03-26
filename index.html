@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sumário - Lógica de Programação</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+      background: white;
+      border-radius: 24px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .container:hover {
+      transform: scale(1.02);
+    }
+
+    .header {
+      background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+
+    .header p {
+      opacity: 0.9;
+      font-size: 0.9rem;
+    }
+
+    .content {
+      padding: 30px;
+    }
+
+    .atalhos {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .atalho {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 18px 20px;
+      background: #f8fafc;
+      border-radius: 16px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: 1px solid #e2e8f0;
+      cursor: pointer;
+    }
+
+    .atalho:hover {
+      background: #f1f5f9;
+      transform: translateX(8px);
+      border-color: #4f46e5;
+    }
+
+    .icone {
+      font-size: 2rem;
+      min-width: 50px;
+      text-align: center;
+    }
+
+    .info {
+      flex: 1;
+    }
+
+    .info h3 {
+      color: #1e293b;
+      font-size: 1.2rem;
+      margin-bottom: 4px;
+    }
+
+    .info p {
+      color: #64748b;
+      font-size: 0.85rem;
+    }
+
+    .seta {
+      color: #94a3b8;
+      font-size: 1.2rem;
+      transition: transform 0.3s ease;
+    }
+
+    .atalho:hover .seta {
+      transform: translateX(4px);
+      color: #4f46e5;
+    }
+
+    .footer {
+      background: #f1f5f9;
+      padding: 20px 30px;
+      border-top: 1px solid #e2e8f0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .footer a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: #4f46e5;
+      font-weight: 500;
+      padding: 8px 12px;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+    }
+
+    .footer a:hover {
+      background: #eef2ff;
+      transform: translateX(4px);
+    }
+
+    .footer a:first-child {
+      margin-top: 0;
+    }
+
+    .divisor {
+      height: 1px;
+      background: #e2e8f0;
+      margin: 8px 0;
+    }
+
+    @media (max-width: 480px) {
+      .content {
+        padding: 20px;
+      }
+      
+      .atalho {
+        padding: 14px 16px;
+      }
+      
+      .icone {
+        font-size: 1.5rem;
+        min-width: 40px;
+      }
+      
+      .info h3 {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📚 Lógica de Programação</h1>
+      <p>Sumário de Materiais e Recursos</p>
+    </div>
+
+    <div class="content">
+      <div class="atalhos">
+        <!-- Atalho 1: Tema 3 - abre em nova guia -->
+        <a href="tema3.html" class="atalho" target="_blank" rel="noopener noreferrer">
+          <div class="icone">🎯</div>
+          <div class="info">
+            <h3>Tema 3</h3>
+            <p>Estruturas condicionais e operadores lógicos</p>
+          </div>
+          <div class="seta">→</div>
+        </a>
+
+        <!-- Atalho 2: Download Tema 3 PDF - abre em nova guia -->
+        <a href="TEMA_03.pdf" class="atalho" target="_blank" rel="noopener noreferrer">
+          <div class="icone">📥</div>
+          <div class="info">
+            <h3>Download Tema 3</h3>
+            <p>Material completo em PDF para estudos</p>
+          </div>
+          <div class="seta">↓</div>
+        </a>
+
+        <!-- Atalho 3: Desafios PDF - abre em nova guia -->
+        <a href="Desafio.pdf" class="atalho" target="_blank" rel="noopener noreferrer">
+          <div class="icone">⚡</div>
+          <div class="info">
+            <h3>Desafios</h3>
+            <p>Lista de exercícios e desafios práticos</p>
+          </div>
+          <div class="seta">↓</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <a href="https://portugol.dev/" target="_blank" rel="noopener noreferrer">
+        <span>🌐</span>
+        <span>Portugol Web - Programe online</span>
+      </a>
+      <div class="divisor"></div>
+      <a href="https://forms.gle/T9QSe3PyEpru3t538" target="_blank" rel="noopener noreferrer">
+        <span>📬</span>
+        <span>Envio de Atividades</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
